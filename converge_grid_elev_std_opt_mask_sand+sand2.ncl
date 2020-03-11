@@ -49,10 +49,10 @@ std_opt = 1
 ;_______________________________ Pre-define ________________________________
 
 file_name = (/\
-         "/srv/ccrc/data03/z3362708/Harmonized_Global_Soil_Data/data",\ ; lat from - to + lon from -180 to 180
-         "/srv/ccrc/data45/z3509830/CABLE_runs/CABLE_site_runs/CABLE_AUX-dev/offline/CABLE_UNSW_GSWP3_gridinfo_0.5x0.5_site.nc",\ ;lat from + to - lon from -180 to 180
-         "/srv/ccrc/data45/z3509830/CABLE_runs/CABLE_site_runs/CABLE_AUX-dev/offline/GSWP3_gwmodel_parameters.nc",\ ;lat from - to + lon from 0 to 360
-         "/srv/ccrc/data45/z3509830/CABLE_runs/CABLE_site_runs/CABLE_AUX-dev/offline/gridinfo_CSIRO_1x1.nc"\ ;lat from + to - lon from -180 to 180
+         "/g/data/w35/ccc561/LIS-WRF/CABLE_soilparams/Harmonized_Global_Soil_Data/data",\ ; lat from - to + lon from -180 to 180
+         "/g/data/w35/ccc561/LIS-WRF/CABLE_soilparams/CABLE_AUX-dev/CABLE_UNSW_GSWP3_gridinfo_0.5x0.5_site.nc",\ ;lat from + to - lon from -180 to 180
+         "/g/data/w35/ccc561/LIS-WRF/CABLE_soilparams/CABLE_AUX-dev/GSWP3_gwmodel_parameters.nc",\ ;lat from - to + lon from 0 to 360
+         "/g/data/w35/ccc561/LIS-WRF/CABLE_soilparams/CABLE_AUX-dev/gridinfo_CSIRO_1x1.nc"\ ;lat from + to - lon from -180 to 180
            /)
 
 var_name1 = (/\
@@ -171,7 +171,7 @@ fileattdef( fout, fAtt )            ; copy file attributes
 
 ; predefine the coordinate variables and their dimensionality
 ; Note: to get an UNLIMITED record dimension, we set the dimensionality
-; to -1 (or the actual size) and set the dimension name to True.
+; to -1 (or the actual size) and set the dimension Unlim to True.
 
 nlat   = 360 ;
 nlon   = 720
