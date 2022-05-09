@@ -1,0 +1,7 @@
+path: /g/data/w97/ccc561/LIS-WRF/CABLE_soilparams/Harmonized_Global_Soil_Data/data
+soil_vars:
+  - CLAY
+  - OC
+  - SAND
+  - SILT
+  - BULK_DEN
