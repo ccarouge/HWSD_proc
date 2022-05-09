@@ -45,6 +45,9 @@ std_opt = 1
 ;  0 : using isoil/LAI (/SnowDepth/SoilTemp,commented out) of Mark's gridinfo file
 ;  1 : using isoil/LAI (/SnowDepth/SoilTemp,commented out) of standard gridinfo file
 
+eq_opt = 1
+;  0 : 
+;  1 : MD's elevation ???
 
 ;_______________________________ Pre-define ________________________________
 
@@ -147,7 +150,7 @@ else if std_opt .eq. 1 then
 end if
 end if
 
-filo = "gridinfo_mmy_"+flag1+"_"+flag2+flag3+"_avg-sand_mask.nc"
+filo = "gridinfo_mmy_"+flag1+"_"+flag2+flag3+"_avg-sand_mask_2503.nc"
 
 
 system("/bin/rm -f " + filo)    ; remove if exists
